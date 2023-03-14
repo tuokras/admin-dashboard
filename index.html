@@ -16,26 +16,63 @@
                 <img src="src/icon/layout.svg" alt="layout icon">
                 <p>Dashboard</p>
             </div>
-            <ul class="personal">
-                <li>Home</li>
-                <li>Profile</li>
-                <li>Messages</li>
-                <li>History</li>
-                <li>Tasks</li>
-                <li>Communities</li>
-            </ul>
-            <ul class="settings">
-                <li>Settings</li>
-                <li>Support</li>
-                <li>Privacy</li>
-            </ul>
+            <div class="menu">
+                <div class="personal">
+                    <div>
+                        <img src="src/icon/home.svg" alt="home icon">
+                        <p>Home</p>
+                    </div>
+                    <div>
+                        <img src="src/icon/user.svg" alt="user icon">
+                        <p>Profile</p>
+                    </div>
+                    <div>
+                        <img src="src/icon/message-square.svg" alt="message icon">
+                        <p>Messages</p>
+                    </div>
+                    <div>
+                        <img src="src/icon/clock.svg" alt="clock icon">
+                        <p>History</p>
+                    </div>
+                    <div>
+                        <img src="src/icon/file-text.svg" alt="file icon">
+                        <p>Tasks</p>
+                    </div>
+                    <div>
+                        <img src="src/icon/users.svg" alt="multiple users icon">
+                        <p>Communities</p>
+                    </div>
+                </div>
+                <div class="settings">
+                    <div>
+                        <img src="src/icon/settings.svg" alt="settings icon">
+                        <p>Settings</p>
+                    </div>
+                    <div>
+                        <img src="src/icon/info.svg" alt="info icon">
+                        <p>Support</p>
+                    </div>
+                    <div>
+                        <img src="src/icon/shield.svg" alt="shield icon">
+                        <p>Privacy</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
         <div class="header">
             <div class="header-top">
-                <form action="send">
-                    <label for="searchbar">Search</label>
-                    <input type="text" id="searchbar" name="searchbar" />
+                <form class="search-container">
+                    <button class="search" type="submit"><img src="src/icon/search.svg" alt="search icon"></button>
+                    <input type="text" name="searchbar" />
                 </form>
+                <div class="menu-right">
+                    <button>
+                        <img src="src/icon/bell.svg" alt="bell icon">
+                    </button>
+                    <img src="src/icon/avatar-svgrepo-com.png" alt="avatar">
+                    <p>Rasmus Tuokko</p>
+                </div>
             </div>
             <div class="header-bottom">
                 <div class="profile">
