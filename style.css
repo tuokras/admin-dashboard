@@ -48,7 +48,9 @@
 .header {
     grid-column: 2;
     grid-row: 1;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
     padding: 16px 32px 16px 32px;
+    background-color: #C9CBA3;
 }
 
 .header .header-top {
@@ -114,4 +116,29 @@
 .header .header-bottom .buttons {
     display: flex;
     gap: 16px;
+}
+
+.content .projects {
+    padding: 32px;
+    background-color: #C9CBA3;
+}
+
+.content .projects .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+
+}
+
+.content .projects .cards .card {
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.content .projects .cards .card .buttons {
+    align-self: flex-end;
 }
