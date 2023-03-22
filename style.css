@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
 .container {
@@ -48,6 +49,7 @@
 .header {
     grid-column: 2;
     grid-row: 1;
+    z-index: 10;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;;
     padding: 16px 32px 16px 32px;
     
@@ -118,9 +120,24 @@
     gap: 16px;
 }
 
+.header .header-bottom .buttons button {
+    font-weight: bold;
+    background-color: #e26d5c;
+    color: white;
+    padding: 8px 16px;
+    height: 32px;
+    border: none;
+    border-radius: 16px;
+}
+
 .content .projects {
     padding: 32px;
-    background-color: #C9CBA3;
+    background-color: #FFE1A8;
+}
+
+.content .projects .heading {
+    margin-bottom: 8px;
+    font-weight: bold;
 }
 
 .content .projects .cards {
@@ -141,6 +158,23 @@
     gap: 8px;
 }
 
+.content .projects .cards .card .text :nth-child(1) {
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.content .projects .cards .card .text :nth-child(2) {
+    font-size: 14px;
+}
+
 .content .projects .cards .card .buttons {
     align-self: flex-end;
+    display: flex;
+    gap: 8px;
+}
+
+.content .projects .cards .card .buttons button {
+    background-color: transparent;
+    border: none;
+    padding: 4px;
 }
